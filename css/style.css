@@ -1,1 +1,48 @@
-/*Adding css file to a project*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#F7F8FA;
+}
+
+/****Left Side Navigatin Bar****/
+
+#sideNavigation, .logo, .menu, .logout, .menuitems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#sideNavigation{
+    min-height: 100vh;
+    width: 74px;
+    flex-direction: column;
+    background-color:#ffffff ;
+}
+.logo{
+    flex-grow: 1;
+    min-height: 100px;
+}
+.menu{
+    flex-grow: 8;
+    flex-direction: column;
+}
+.menuitems{
+    display: flex;
+    min-height: 74px;
+    min-width: 74px;
+}
+.menuitems:hover{
+    cursor: pointer;
+    background-color: #322A7D;
+}
+
+.menuitems img{
+    margin: 0 auto;
+}
+.logout{
+    flex-grow: 1;
+    min-height: 120px;
+}
